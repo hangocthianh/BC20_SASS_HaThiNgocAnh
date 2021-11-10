@@ -1,11 +1,9 @@
 footer {
     background-image: url(../images/footer_background.jpg);
-    background-size: 120%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    .footer__content{
-        padding: $pd-1 0;
-    }
+    padding: $pd-1 0;
     h3 {
         @include styleText($fs-3, $fw-1, $color-white);
         padding-bottom: $pd-8;
@@ -36,30 +34,3 @@ footer {
     }
 }
 
-//responsive
-@include responsive("large-down"){
-    footer{
-        height: 100%;
-        background-size: contain;
-        .footer__content{
-            padding: $pd-5 0;
-        }
-    } 
-}
-@include responsive("medium-down"){
-    footer{
-        height: 100%;
-        background-size: contain;
-        .footer__content{
-            padding: $pd-5 0;
-        }
-    } 
-}
-@include responsive("small-down"){
-    footer{
-        background-size: contain;
-        .footer__content{
-            padding: $pd-5 0;
-        }
-    } 
-}

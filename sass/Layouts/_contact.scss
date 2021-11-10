@@ -1,9 +1,6 @@
 .contact {
     padding-top: $pd-2;
     position: relative;
-    .contact__content {
-        padding: 0 ;
-    }
     .contact__bgBottom {
         position: absolute;
         bottom: 0;
@@ -48,4 +45,18 @@
             padding: $pd-9 $pd-3;
         }
     }
+}
+
+
+
+//responsive
+@include responsive("medium-down"){
+    .contact{
+        padding-top: $pd-3 ;
+        .contact__form{
+            h3 {
+                @include styleText($fs-2 - 0.5, $fw-1, $color-dark-1);
+            }
+        }
+    } 
 }
